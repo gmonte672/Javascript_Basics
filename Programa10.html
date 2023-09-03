@@ -1,0 +1,40 @@
+<script>
+	var n1 = prompt("Digite o primeiro valor");
+	var n2 = prompt("Digite o segundo valor");
+	var e = prompt("Escolha uma das 4 opcoes [ 1 media entre os numeros digitados -- 2 diferenca do maior pelo menor -- 3 produto entre os numeros digitados -- 4 divisao do primeiro pelo segundo ]");
+	var vfinal;
+	
+	switch(e){
+		case "1":
+			vfinal = (parseFloat(n1)+parseFloat(n2))/2;
+			alert("A media entre os valores digitados eh "+vfinal);
+			break;
+		
+		case "2":
+			if(n1<n2){
+				vfinal = parseFloat(n1)-parseFloat(n2);
+				alert("A diferenca do maior pelo menor eh "+vfinal);
+			}else{
+				vfianl = parseFloat(n2)-parseFloat(n1);
+				alert("A diferenca do maior pelo menor eh "+vfinal);
+			}
+			break;
+			
+		case "3":
+			vfinal = parseFloat(n1)*parseFloat(n2);
+			alert("O produto entre os numeros digitados eh "+vfinal);
+			break;
+			
+		case "4":
+			if(n2 != 0){
+				vfinal = parseFloat(n1)/parseFloat(n2);
+				alert("A divisao entre os numeros eh "+vfinal);
+			}else{
+				alert("O segundo valor precisa ser diferente de 0");
+			}
+			break;
+			
+		default:
+			alert("Opcao invalida");
+	}
+</script>

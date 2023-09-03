@@ -1,0 +1,19 @@
+<script>
+    
+    var a = prompt("Digite o valor de A");
+    var b = prompt("Digite o valor de B");
+    var c = prompt("Digite o valor de C");
+    var delta1 = 4*parseFloat(a)*parseFloat(c);
+    var delta2 = b^2*parseFloat(delta1);
+    var raiz = (Math.sqrt(delta2));
+    var x1 = -b+parseFloat(raiz);
+    var x2 = -b-parseFloat(raiz);
+    
+    document.write("O delta é "+delta2);
+    document.write("<br>");
+    document.write("A raiz do delta é "+raiz);
+    document.write("<br>");
+    document.write("O X1 é "+x1);
+    document.write("<br>");
+    document.write("O X2 é "+x2);
+</script>

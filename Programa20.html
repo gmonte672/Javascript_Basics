@@ -1,0 +1,42 @@
+<script>
+var x=prompt("Diga uma frase");
+	alert("ESCOLHA ENTRE 1-Italico, 2-Negrito");	
+var y=prompt("Qual opcao voce deseja?");
+var z=prompt("Qual o tamanho da fonte desejada?");
+var a=prompt("Deseja deixar o texto em maiusculo?1-sim,2-nao");
+	
+var b=prompt("Qual cor voce quer? 1-Azul, 2-Vermelho, 3-Verde");
+		switch(y){
+		case "1":
+		var mx = x.italics();
+		break;		
+		case"2":
+		var mx = x.bold();
+		break;
+		};
+
+
+var mxm = mx.fontsize(z);
+
+		switch(a){
+		case "1":
+		var mxmx = mxm.toUpperCase();
+		break;
+		case "2":
+		var mxmx = mxm;
+		break;
+		};
+
+		switch(b){
+		case "1":
+		var mxmxm = mxmx.fontcolor("blue");
+		break;
+		case "2":
+		var mxmxm = mxmx.fontcolor("red");
+		break;
+		case "3":
+		var mxmxm = mxmx.fontcolor("green");
+		break;
+		};
+document.write(mxmxm)
+</script>

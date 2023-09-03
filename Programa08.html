@@ -1,0 +1,35 @@
+<script>
+    alert("1 - Media entre numeros digitados");
+    alert("2 - Diferenca do maior pelo menor");
+    alert("3 - Produto entre os numeros digitados");
+    alert("4 - Divisao do primeiro pelo segundo");
+    
+    var escolha = prompt("Digite a operacao");
+    var n1 = prompt("Digite o primeiro valor");
+    var n2 = prompt("Digite o segundo valor");
+    var nfinal;
+    
+    if(escolha == 1){
+        nfinal = (parseFloat(n1)+parseFloat(n2))/2;
+        alert("A media entre os numeros digitados eh "+nfinal);
+    }else{
+        if(escolha == 2){
+            if(n1>n2){
+                nfinal = parseFloat(n2)-parseFloat(n1);
+            }else{
+                nfinal = parseFloat(n1)-parseFloat(n2);
+            }
+            alert("A diferenca do maior pelo menor eh "+nfinal)
+        }else{
+            if(escolha == 3){
+                nfinal = parseFloat(n1)*parseFloat(n2);
+                alert("O produto entre os numeros digitados eh "+nfinal);
+            }else{
+                if(escolha == 4){
+                    nfinal = parseFloat(n1)/parseFloat(n2);
+                    alert("A divisao do primeiro pelo segundo eh "+nfinal);
+                }
+            }
+        }
+    }
+</script>
